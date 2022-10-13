@@ -1,6 +1,6 @@
 
 .footer-distributed {
-    height: 15vh;
+    min-height: 13vh;
     position: absolute;
     bottom: 0;
     background-color: #292c2f;
