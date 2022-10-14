@@ -9,7 +9,7 @@ const button = document.getElementById("submit");
 
 
     const weather = {
-        Array: ["sunny clear", "rainy shower", "fog mist", "mist", "dust", "cloudy", "haze"],
+        Array: ["clear","drizzle","hail","overcast","partly cloudy","rain","raindrops","thunderstorm","wind","rainy", "fog", "mist", "dust", "cloudy", "haze"],
 
     api_key: "a208be024f2841ee971ae642b79334f7",
 
