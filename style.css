@@ -5,17 +5,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body{
-    display:flex;
- flex-direction:column;
+    /* display:flex; */
+ /* flexdirection:column; */
     position: relative;
-    /* padding-top: 10vh; */
     width: 100%;
-    min-height: 100vh;
-    /* background-color: rgb(116, 215, 233); */
+    min-height: 120vh;
     background: linear-gradient(to bottom right, #1E9AFE , #60DFCD);
-    /* padding-bottom: 115px; */
-    /* overflow: hidden; */
 }
 Navbar{
     height: 10vh;
@@ -44,7 +41,7 @@ Navbar{
     background-color: rgba(255, 255, 255, 0.575)
 }
 .wrap{
-    display: none;
+    display:none;
 }
 #top{
     margin-top: 10px;
@@ -95,7 +92,7 @@ img{
     left: 50%;
     top: 50%;
     margin-bottom: 20px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     flex:1;
     /* height: 85vh; */
     width: 80vw;
