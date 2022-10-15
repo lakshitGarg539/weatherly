@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
@@ -12,12 +13,23 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <H3 style="color: white">Weatherly</H3>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="ham">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+    </div>
     <div class="wrapper">
 
         <div class="container">
             
         <Navbar>
-            <h2 style="color: rgb(15, 80, 124); font-size:max(2vw, 13px);">Weatherly</h2>
+            <h2 style="color: rgb(15, 80, 124); font-size:max(2vw, 17px);">Weatherly</h2>
             <div id="search_container">
                 <input type="text" placeholder="Search" id="search">
                 <button id="submit"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
@@ -41,15 +53,8 @@
         </div>
     </div>
 </div>
-</div>
 
 <footer class="footer-distributed">
-        <div class="footer-right">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-        </div>
         <div class="footer-left">
             <p>Copyright @ Lakshit Garg; 2022</p>
         </div>

@@ -55,4 +55,8 @@ document.getElementById("search").addEventListener("keypress", (event) => {
     }
 });
 
-    
+const ham = document.querySelector(".ham");
+ham.addEventListener('click', ()=>{
+    document.querySelector(".nav-links").classList.toggle("open");
+})
+
