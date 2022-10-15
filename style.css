@@ -151,6 +151,8 @@ img{
         display: block;
     }
     .nav-links{
+        height: 0px;
+        widht: 0px;
         opacity: 0;
         pointer-events: none;
     }
