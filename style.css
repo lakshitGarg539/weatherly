@@ -151,12 +151,6 @@ img{
         display: block;
     }
     .nav-links{
-        height: 0px;
-        widht: 0px;
-        opacity: 0;
-        pointer-events: none;
-    }
-    .nav-links.open{
         pointer-events: all;
         height: 40vh;
         width: 100%;
@@ -168,7 +162,12 @@ img{
         left: 0;
         top: 10vh;
         flex-direction: column;
-        transition: 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
+       transform: translateX(-100%);
+        /*transition: 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);*/
+    }
+        .nav-links.open{
+       transform: translateX(0);
+       transition: 0.7s;
     }
     .nav-links.open li{
         margin: 18px 0px;
