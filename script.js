@@ -32,7 +32,7 @@ const button = document.getElementById("submit");
         document.getElementById("location").innerHTML = city_name + ", " + country_code;
         document.getElementById("Other").innerHTML = `
                 Real Feel: ${app_temp}&degC<br>
-                Wind Speed: ${wind_spd} m/s<br>
+                Wind Speed: ${wind_spd.toFixed(2)} m/s<br>
                 Pressure: ${pres} mb
         `;
         document.getElementsByClassName("wrap")[0].style.display = "block";

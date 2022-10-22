@@ -139,6 +139,28 @@ img{
     color: rgba(255, 248, 248, 0.767);
 }
 
+
+::-webkit-scrollbar {
+    -webkit-border-radius: .2em;
+    width: .9em;
+    height: 0;
+    background-color: #e3e4e6f1;
+}
+::-webkit-scrollbar-thumb {
+    height: .5em;
+    border: 0.2em solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.025);
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
 @media only screen and (max-width: 768px) {
     Navbar{
         padding: 10px;
