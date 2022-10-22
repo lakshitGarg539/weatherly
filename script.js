@@ -9,7 +9,6 @@ const button = document.getElementById("submit");
 
 
     const weather = {
-        Array: ["clear","drizzle","hail","overcast","partly cloudy","rain","raindrops","thunderstorm","wind","rainy", "fog", "mist", "dust", "cloudy", "haze"],
 
     api_key: "a208be024f2841ee971ae642b79334f7",
 
@@ -24,18 +23,17 @@ const button = document.getElementById("submit");
 
     display_weather: function (data) {
         console.log(data);
-        const { temp, app_temp, city_name, aqi, precip, wind_spd, rh } = data.data[0];
+        const { temp, app_temp, city_name, aqi, pres, wind_spd, rh, country_code } = data.data[0];
         const { description, icon } = data.data[0].weather;
-        const matches = this.Array.filter(s => description.toLowerCase().includes(s));
-        console.log(matches);
-        document.querySelector('img').src = `./icons/${matches[0]}.svg`;
+        document.querySelector('img').src = `./icons/${icon}.png`;
         document.getElementById("Temp").innerHTML = temp + "&degC";
-        document.getElementById("aqi").innerHTML = "AQI:" + aqi;
+        document.getElementById("aqi").innerHTML = "AQI: " + aqi;
         document.getElementById("desc").innerHTML = description;
-        document.getElementById("location").innerHTML = city_name;
+        document.getElementById("location").innerHTML = city_name + ", " + country_code;
         document.getElementById("Other").innerHTML = `
-                Feels Like: ${app_temp}&degC<br>
-                Wind Speed: ${wind_spd}<br>
+                Real Feel: ${app_temp}&degC<br>
+                Wind Speed: ${wind_spd} m/s<br>
+                Pressure: ${pres} mb
         `;
         document.getElementsByClassName("wrap")[0].style.display = "block";
     }
@@ -47,10 +45,9 @@ button.addEventListener("click", () => {
     weather.get_weather(city);
 });
 
-document.getElementById("search").addEventListener("keypress", (event) => {
+document.getElementById("search").addEventListener("keydown", (event) => {
     let city = document.getElementById("search").value;
-    if (event.key === "Enter") {
-        console.log(event);
+    if (event.code === "Enter" || event.key == "Enter") {
         weather.get_weather(city);
     }
 });

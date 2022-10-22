@@ -97,9 +97,11 @@ p{
     color: rgb(15, 80, 124);
 }
 #top p:last-child{
-    padding: 2px;
-    font-size: max(0.9vw, 10px);
-    background-color: rgba(240, 248, 255, 0.685);
+    margin-top: 6px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: max(0.9vw, 9px);
+    background-color: rgba(252, 252, 252, 0.685);
     border-radius: 10px;
 }
 #Temp{
