@@ -139,7 +139,7 @@ img{
     color: rgba(255, 248, 248, 0.767);
 }
 
-
+@media only screen and (min-width: 768px){
 ::-webkit-scrollbar {
     -webkit-border-radius: .2em;
     width: .9em;
@@ -161,6 +161,7 @@ img{
     background-color: rgba(0, 0, 0, 0.30);
 }
 
+}
 @media only screen and (max-width: 768px) {
     Navbar{
         padding: 10px;
