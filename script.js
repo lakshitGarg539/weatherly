@@ -25,7 +25,7 @@ const button = document.getElementById("submit");
         console.log(data);
         const { temp, app_temp, city_name, aqi, pres, wind_spd, rh, country_code } = data.data[0];
         const { description, icon } = data.data[0].weather;
-        document.querySelector('img').src = `./icons/${icon}.png`;
+        document.querySelector('img').src = `./icons/${icon}.svg`;
         document.getElementById("Temp").innerHTML = temp + "&degC";
         document.getElementById("aqi").innerHTML = "AQI: " + aqi;
         document.getElementById("desc").innerHTML = description;
