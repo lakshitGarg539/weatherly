@@ -57,3 +57,9 @@ ham.addEventListener('click', ()=>{
     document.querySelector(".nav-links").classList.toggle("open");
 })
 
+document.addEventListener("click", (e)=>{
+    if(e.target.id !== "navbar" && e.target.id !== "bars"){
+        console.log(e);
+        document.querySelector(".nav-links").classList.remove("open")
+    }
+})
