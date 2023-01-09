@@ -4,11 +4,14 @@ document.documentElement.style.setProperty(
 const metaViewport = document.querySelector("meta[name=viewport]");
 
 function fixOrient(){
-metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width="+ window.innerWidth + "px,  initial-scale=1.0");
+metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width=device-width,  initial-scale=1.0");
 }
-window.addEventListener('resize', function(event) {
-    metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width="+ window.innerWidth + "px,  initial-scale=1.0");
-}, true);
+
+// window.addEventListener('resize', function(event) {
+//     metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width="+ window.innerWidth + "px,  initial-scale=1.0");
+//     console.log("resize");
+// }, true);
+
 const button = document.getElementById("submit");
     const weather = {
 
