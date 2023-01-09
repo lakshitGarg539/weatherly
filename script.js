@@ -1,13 +1,13 @@
-let viewport = document.querySelector("meta[name=viewport]")
-viewport.setAttribute("content", "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
 
 document.documentElement.style.setProperty(
     "overflow", "auto");
+
+function fixOrient(){
 const metaViewport = document.querySelector("meta[name=viewport]");
-metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width=device-width, initial-scale=1.0");
+metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width="+ window.innerWidth + "px,  initial-scale=1.0");
+}
+
 const button = document.getElementById("submit");
-
-
     const weather = {
 
     api_key: "a208be024f2841ee971ae642b79334f7",
