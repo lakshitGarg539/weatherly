@@ -1,12 +1,14 @@
 
 document.documentElement.style.setProperty(
     "overflow", "auto");
+const metaViewport = document.querySelector("meta[name=viewport]");
 
 function fixOrient(){
-const metaViewport = document.querySelector("meta[name=viewport]");
 metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width="+ window.innerWidth + "px,  initial-scale=1.0");
 }
-
+window.addEventListener('resize', function(event) {
+    metaViewport.setAttribute("content", "height=" + window.innerHeight + "px, width="+ window.innerWidth + "px,  initial-scale=1.0");
+}, true);
 const button = document.getElementById("submit");
     const weather = {
 
